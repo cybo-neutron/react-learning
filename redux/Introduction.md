@@ -273,9 +273,11 @@ const store = createStore(
  A working exammple can be seen [**here**](./redux-intro/middleware.js)
 
 ## Async Actions
-Async actions are handled by redux-thunk in redux application. They are most commonly used for data fetching but can be used for other tasks as well.
+**Thunk** : Thunk is a type of action creator that returns a function instead of an action object.
 
-Adding thunk as middleware
+Async actions are handled by redux-thunk in redux application. They are most commonly used for data fetching(asyncronous actions) but can be used for other tasks as well.
+
+**Adding thunk as middleware**
 
 Install thunk
 
@@ -298,7 +300,7 @@ Our async code can sit inside a function which will dispatch an action when our 
 
 ```js
 /*
-here the following are action creators
+here the following are action creators which we have defined earlier in out program
 - fetchUsersRequest
 - fetchUsersSuccess
 - fetchUsersFailed

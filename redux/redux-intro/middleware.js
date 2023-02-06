@@ -44,7 +44,6 @@ const cakeReducer = (state = cakeInitialStore, action) => {
 const customMiddleware = (store) => (next) => (action) => {
   console.log("ACTION : ", action.type);
   console.log("     current state ", store.getState());
-  //   console.log("   next state: ", next.getState());
   const nextState = next(action);
 };
 const store = createStore(
